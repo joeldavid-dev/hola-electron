@@ -1,0 +1,23 @@
+Documentación: https://www.electronjs.org/es/docs/latest/tutorial/quick-start
+
+// Inicia el proyecto inmediatamente, sin preguntar cosa por cosa
+npm init -y
+
+// Instala la dependencia de electron
+npm install electron -D
+
+// Instala paquete con reglas pre definidas para facilitar el desarrollo
+npm install standard -D
+
+// Agregar la librería al proyecto (en el package.json)
+"eslintConfig": {
+    "extends": "standard"
+  }
+
+// Agregar el comando "start" para ejecutar en modo desarrollo (en el package.json)
+"start": "electron .",
+
+// Ejecutar
+npm run start
+
+//
