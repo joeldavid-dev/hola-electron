@@ -20,4 +20,13 @@ npm install standard -D
 // Ejecutar
 npm run start
 
-//
+// Para empaquetar y distribuir la app:
+// Instalar electron-forge
+npm install --save-dev @electron-forge/cli
+
+// Este comando configurará los archivos necesarios para que tu aplicación funcione
+// con Electron Forge, incluidos los archivos de configuración y la estructura de directorios.
+npx electron-forge import
+
+// Empaquetar
+npm run make
